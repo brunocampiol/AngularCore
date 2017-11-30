@@ -1,0 +1,18 @@
+﻿<h1>Sample read from MongoDB</h1>
+
+<p *ngIf="!mongorows"><em>Loading...</em></p>
+
+<table class='table' *ngIf="mongorows">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let mongorow of mongorows">
+            <td>{{ mongorow.id }}</td>
+            <td>{{ mongorow.value }}</td>
+        </tr>
+    </tbody>
+</table>

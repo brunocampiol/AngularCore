@@ -11,6 +11,7 @@ import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { TestComponent } from './components/test/test.component';
 import { FormSubmitComponent } from './components/formsubmit/formsubmit.component';
+import { MongoReadComponent } from './components/mongoread/mongoread.component';
 
 @NgModule({
     declarations: [
@@ -20,6 +21,7 @@ import { FormSubmitComponent } from './components/formsubmit/formsubmit.componen
         FetchDataComponent,
         TestComponent,
         FormSubmitComponent,
+        MongoReadComponent,
         HomeComponent
     ],
     imports: [
@@ -33,6 +35,7 @@ import { FormSubmitComponent } from './components/formsubmit/formsubmit.componen
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'test', component: TestComponent },
             { path: 'form-submit', component: FormSubmitComponent },
+            { path: 'mongo-read', component: MongoReadComponent },
             { path: '**', redirectTo: 'home' }
         ])
     ]

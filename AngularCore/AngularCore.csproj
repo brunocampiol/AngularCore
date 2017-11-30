@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,11 +24,13 @@
 
   <ItemGroup>
     <None Remove="ClientApp\app\components\formsubmit\formsubmit.component.ts" />
+    <None Remove="ClientApp\app\components\mongoread\mongoread.component.ts" />
     <None Remove="ClientApp\app\components\test\test.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app\components\formsubmit\formsubmit.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\mongoread\mongoread.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\test\test.component.ts" />
   </ItemGroup>
 
